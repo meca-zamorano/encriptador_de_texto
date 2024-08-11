@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="body">
@@ -12,17 +12,29 @@
     <h1 class="header__titulo">Encriptador de texto</h1>
   </header>
   <main class="main">
-    <div class="main__contenido">
+    <section class="main__contenido1">
       <textarea class="main__textarea" type="text" placeholder="Introduce el texto aquí"></textarea>
-      <p>Solo letras mayúsculas y sin acento</p>
-    </div>
-    <div class="main__botones">
-      <button>Encriptar</button>
-      <button>Desencriptar</button>
-    </div>
+      <div>
+        <span class="main__icon">!</span>
+        <span class="main__mensaje">Solo letras minúsculas y sin acentos</span>
+      </div>
+      <div class="main__botones">
+        <button class="main__botones main__botones--btn1">Encriptar</button>
+        <button class="main__botones main__botones--btn2">Desencriptar</button>
+      </div>
+    </section>
+    <section class="main__contenido2">
+        <input class="main__textarea main__textarea--txt" type="text"></input>
+        <div id="message-container">
+          <img src="img/Muñeco.png" alt="Ningún mensaje encontrado" id="img">
+          <h2 id="title">Ningún mensaje fue encontrado</h2>
+          <p id="subtitle">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </section>
   </main>  
   <footer class="footer">
-    <p>Desarrollado por Eimy</p>
+    <p class="footer__text">Desarrollado por Eimy Cabrera</p>
   </footer>
+  <script src="js/logica.js"></script>
 </body>
 </html>
